@@ -1,0 +1,51 @@
+douyin:
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+      like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+    Referer: https://www.douyin.com/
+  cookie:
+  proxies:
+    http://:
+    https://:
+
+# f2 tk -c my_apps.yaml -u https://www.tiktok.com/@hsin_oyen -i 2025-03-07 21-00-00|2025-03-07 22-00-00
+tiktok:
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+      like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+    Referer: https://www.tiktok.com/
+  cookie: tt_csrf_token=b2cOnuQn-GgKgwSz2qQF9bbH4_GrO6uiAQns; tt_chain_token=3+LM+yJueNFTVDIKhRw8WA==; delay_guest_mode_vid=8; passport_csrf_token=6959a631a2b45e39d28c05770cc73e18; passport_csrf_token_default=6959a631a2b45e39d28c05770cc73e18; s_v_web_id=verify_m8db3z8u_aZRlyNJh_E32b_4nCE_BPit_uWt2RBEqhFbY; last_login_method=QRcode; sid_guard=2ee7c43f13102766d04c9c9c18548818%7C1742231501%7C21600%7CMon%2C+17-Mar-2025+23%3A11%3A41+GMT; uid_tt=f3cc7b59f8c1a5287c5cde368831b46a; uid_tt_ss=f3cc7b59f8c1a5287c5cde368831b46a; sid_tt=2ee7c43f13102766d04c9c9c18548818; sessionid=2ee7c43f13102766d04c9c9c18548818; sessionid_ss=2ee7c43f13102766d04c9c9c18548818; sid_ucp_v1=1.0.0-KGQyMjQ3N2IyNTA2OWI0NTcxZjMyYmIwMzEzZWQ1OTA0NzYwOTI2MzkKCRDNr-G-BhizCxADGgJteSIgMmVlN2M0M2YxMzEwMjc2NmQwNGM5YzljMTg1NDg4MTg; ssid_ucp_v1=1.0.0-KGQyMjQ3N2IyNTA2OWI0NTcxZjMyYmIwMzEzZWQ1OTA0NzYwOTI2MzkKCRDNr-G-BhizCxADGgJteSIgMmVlN2M0M2YxMzEwMjc2NmQwNGM5YzljMTg1NDg4MTg; tiktok_webapp_theme_source=auto; tiktok_webapp_theme=dark; odin_tt=8ca4c5ad34a492863189be45db88ec011ae434b2e410fd9ba3d192b3f0653bae9911715f43ff8cb6c11a108e31eaad32e7b4f45791ace7026b0cb3ac72de125c2bc74428fd487301cd5627b4a41fba78; ttwid=1%7CA3-NomUJEVtkszT6nhFoiCCRTvfkfwbKJkm1_hi3e4Q%7C1742231542%7C256d82efda68ffeeb6075253b748559cdcc0435a347e0c1887d8fdc7cfa2a976; msToken=jOOzRN4gvqvig_wp68-ltyMYAkKFgqv9TFrEoMKVcfYT554TNGktkddcTsGXPeQ25jsp2qk-w2XuQAzNm0NEdDTke7m5H3f1Z7qIdW2UM8OaXw53ZATWU3vmKwC9WWIALYY2l737G3z1a_JrVMbpzbIbnyQ=; perf_feed_cache={%22expireTimestamp%22:1742403600000%2C%22itemIds%22:[%227439053390925073671%22%2C%227439575101462400263%22]}; msToken=RONSgvab0Bi6ZdQfnEFS4GKzXYrW00xVm8MmJPB3flwUlu9WbcIQbs1qfHRD5Nk0doxyEaDdjQqPZ_nIz-sYrKfqtNMB7bCKer9k5ST_EAPogyxqHynzSOm-kNs97NoNckomiX3pPm7g1zSepEtwfZG85xI=
+  proxies:
+    http://: http://79uaGj9m:MXisZ44J@45.95.0.224:64878
+    https://: http://79uaGj9m:MXisZ44J@45.95.0.224:64878
+  music: no
+  cover: no
+  desc: yes
+  folderize: yes
+  mode: post
+  naming: '{create}'
+  # interval: 2025-03-07 20-00-00|2025-03-07 21-00-00
+
+weibo:
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+      like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+    Referer: https://www.weibo.com/
+  cookie:
+  proxies:
+    http://:
+    https://:
+
+twitter:
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+      like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+    Referer: https://twitter.com/
+  cookie:
+  proxies:
+    http://:
+    https://:
+
+bark:
+  key: ""
+  token: ""
