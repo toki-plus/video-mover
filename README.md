@@ -1,3 +1,7 @@
+### 视频教程
+
+【TikTok👉视频号（解放双手实现短视频自由）】 https://www.bilibili.com/video/BV1txQeYyEEz/
+
 ### 前置条件
 
 - dotnet：https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer
