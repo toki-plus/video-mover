@@ -25,7 +25,8 @@ class AIAnalyzer:
         """
 
         try:
-            dashscope.api_key = "sk-5b85fdd3137847828f4e0e1a37722230"
+            # api_key需要在阿里百炼里面注册获取
+            dashscope.api_key = "sk-5b85fdd313xxxxxx8f4e0e1a37722230"
             messages = [
                 {
                     "role": "system",
