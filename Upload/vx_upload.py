@@ -25,7 +25,7 @@ class AIAnalyzer:
         """
 
         try:
-            # api_key需要在阿里百炼里面注册获取
+            # api_key需要在阿里百云炼里面注册获取：https://bailian.console.aliyun.com/
             dashscope.api_key = "sk-5b85fdd313xxxxxx8f4e0e1a37722230"
             messages = [
                 {
