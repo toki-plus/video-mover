@@ -76,9 +76,14 @@
    await page.wait_for_url("https://channels.weixin.qq.com/platform/post/list", timeout=10000)
    ```
 
-5. 访问`TikTok`网页获取`Cookie`并将其替换到`my_apps.yaml`中
+5. 申请并修改`C:\Users\Toki\Desktop\Project\video-mover\Upload\vx_upload.py`中的阿里云百炼`api_key`
 
-6. 双击`start.bat`，等待登陆后点击开发者工具的绿色三角形箭头
+6. 访问`TikTok`网页获取`Cookie`并将其替换到`my_apps.yaml`中
 
-7. （可选）修改`mover_v3`目录下`my_apps.yaml`中的`Proxy`配置
+7. 双击`start.bat`，等待登陆后点击开发者工具的绿色三角形箭头
 
+8. （可选）修改`video-mover`目录下`my_apps.yaml`中的`Proxy`配置
+
+### 交流
+
+vx: toki-plus
