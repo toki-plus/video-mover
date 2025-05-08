@@ -5,7 +5,7 @@
 ### 前置条件
 
 - dotnet：https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer
-- V2rayn：https://github.com/2dust/v2rayN/releases/download/5.39/v2rayN-Core.zip
+- v2rayN：https://github.com/2dust/v2rayN/releases/download/5.39/v2rayN-Core.zip
 - Chrome：https://www.google.com/
 - Python：https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe
 - Node.js：https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi
