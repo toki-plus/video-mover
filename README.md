@@ -20,9 +20,13 @@
 - 自动调整视频饱和度、亮度、对比度
 - 视频背景模糊、高斯模糊、帧交换、颜色偏移、频域扰乱、纹理噪声、边缘模糊
 
-> 需要AB的可以到最下方联系我
+> 需要AB视频去重工具的可以到最下方联系我
 >
 > ![ab](ab.png)
+>
+> 演示
+> 
+> <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114770166422455&bvid=BV1HwgrzbEow&cid=30769351545&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 #### 视频上传功能
 
@@ -31,7 +35,7 @@
 
 ### 脚本视频教程
 
-【TikTok👉视频号（解放双手实现短视频自由）】 https://www.bilibili.com/video/BV1txQeYyEEz/
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114173367294645&bvid=BV1txQeYyEEz&cid=28902886633&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ### 前置条件
 
@@ -117,4 +121,4 @@
 
 ### 交流
 
-vx: toki-plus
+微信: toki-plus
