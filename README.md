@@ -22,7 +22,7 @@
 
 > 需要AB视频去重工具的可以到最下方联系我
 >
-> ![AB视频去重工具](AB视频去重工具.png)
+> ![AB视频去重工具](https://llxoxll.com/assets/cache/images/202506300142308757994.png)
 >
 > 使用演示
 > 
