@@ -22,7 +22,7 @@
 
 > 需要AB视频去重工具的可以到最下方联系我
 >
-> ![ab](ab.png)
+> ![AB视频去重工具](AB视频去重工具.png)
 >
 > 使用演示
 > 
@@ -33,7 +33,7 @@
 - 视频去重完毕后，调用阿里云百炼AI大模型分析该视频，自动生成爆款短视频标题+标签
 - 自动打开浏览器登录视频号后台，自动填写信息并发布内容
 
-### 脚本视频教程
+### 视频教程
 
 [![视频封面](https://i2.hdslb.com/bfs/archive/678607430d704dfbe72183613c6aca60dcebb4fc.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1txQeYyEEz)
 
