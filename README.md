@@ -24,9 +24,9 @@
 >
 > ![ab](ab.png)
 >
-> 演示
+> 使用演示
 > 
-> <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114770166422455&bvid=BV1HwgrzbEow&cid=30769351545&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+> [![视频封面](https://i1.hdslb.com/bfs/archive/d81bf273e65a74a81756599a64e9d975b175390f.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1HwgrzbEow)
 
 #### 视频上传功能
 
@@ -35,7 +35,7 @@
 
 ### 脚本视频教程
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114173367294645&bvid=BV1txQeYyEEz&cid=28902886633&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+[![视频封面](https://i2.hdslb.com/bfs/archive/678607430d704dfbe72183613c6aca60dcebb4fc.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1txQeYyEEz)
 
 ### 前置条件
 
