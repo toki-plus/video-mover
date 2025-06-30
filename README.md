@@ -37,6 +37,10 @@
 
 [![视频封面](https://i2.hdslb.com/bfs/archive/678607430d704dfbe72183613c6aca60dcebb4fc.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1txQeYyEEz)
 
+<a href="https://www.bilibili.com/video/BV1txQeYyEEz" target="_blank">
+  <img src="https://i2.hdslb.com/bfs/archive/678607430d704dfbe72183613c6aca60dcebb4fc.jpg@672w_378h_1c.avif" alt="B站视频" width="600">
+</a>
+
 ### 前置条件
 
 - dotnet：https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer
