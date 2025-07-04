@@ -138,7 +138,7 @@
     </td>
     <td align="center">
         <a href="https://llxoxll.com/">
-            <img src="images/zsm.jpg" width="200px" alt="赞赏码"/>
+            <img src="images/zanzhu.jpg" width="200px" alt="赞赏码"/>
             <br />
             <sub><b>赞赏码</b></sub>
         </a>
