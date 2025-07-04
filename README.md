@@ -131,9 +131,9 @@
     </td>
     <td align="center">
         <a href="https://llxoxll.com/">
-            <img src="images/yqkj.jpg" width="200px" alt="微信公众号"/>
+            <img src="images/yqkj.jpg" width="200px" alt="公众号"/>
             <br />
-            <sub><b>微信公众号</b></sub>
+            <sub><b>公众号</b></sub>
         </a>
     </td>
     <td align="center">
