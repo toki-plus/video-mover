@@ -39,7 +39,7 @@
 - **AI标题生成**：调用阿里云百炼AI大模型，分析视频内容，自动生成爆款标题和标签。
 - **自动化发布**：模拟浏览器操作，登录视频号后台，自动填写所有信息并发布视频。
 
-### 🎬 视频教程 (点击图片播放)
+### 🎬 视频教程 (点击图片播放👇)
 
 [![视频封面](https://i2.hdslb.com/bfs/archive/678607430d704dfbe72183613c6aca60dcebb4fc.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1txQeYyEEz)
 
