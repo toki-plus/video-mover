@@ -20,15 +20,9 @@
 - 自动调整视频饱和度、亮度、对比度
 - 视频背景模糊、高斯模糊、帧交换、颜色偏移、频域扰乱、纹理噪声、边缘模糊
 
-> 需要最新版AB视频去重工具的朋友可以到最下方联系我
+> **对AB视频去重工具或去重算法感兴趣的朋友可以移步我的另一个项目：https://github.com/toki-plus/AB-Video-Deduplicator**
 >
-> ![AB视频去重工具](https://llxoxll.com/assets/cache/images/202507121956051588517.png)
->
-> 对AB去重算法感兴趣的朋友可以移步我的另一个项目：https://github.com/toki-plus/AB-Video-Deduplicator
-> 
-> 使用演示（点击图片播放👇）
-> 
-> [![视频封面](https://i1.hdslb.com/bfs/archive/d81bf273e65a74a81756599a64e9d975b175390f.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1HwgrzbEow)
+> **需要进短视频创作技术交流群的朋友可以到最下方联系我。**
 
 #### 视频上传功能
 
