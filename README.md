@@ -120,14 +120,14 @@
 <table>
     <td align="center">
         <a href="https://llxoxll.com/">
-            <img src="images/toki-plus.jpg" width="200px" alt="微信"/>
+            <img src="images/toki-plus.png" width="200px" alt="微信"/>
             <br />
             <sub><b>微信</b></sub>
         </a>
     </td>
     <td align="center">
         <a href="https://llxoxll.com/">
-            <img src="images/yqkj.jpg" width="200px" alt="公众号"/>
+            <img src="images/yqkj.png" width="200px" alt="公众号"/>
             <br />
             <sub><b>公众号</b></sub>
         </a>
