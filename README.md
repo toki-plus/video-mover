@@ -24,6 +24,8 @@
 >
 > ![AB视频去重工具](https://llxoxll.com/assets/cache/images/202507121956051588517.png)
 >
+> 对AB去重算法感兴趣的可以移步我的另一个项目：https://github.com/toki-plus/AB-Video-Deduplicator
+> 
 > 使用演示（点击图片播放👇）
 > 
 > [![视频封面](https://i1.hdslb.com/bfs/archive/d81bf273e65a74a81756599a64e9d975b175390f.jpg@672w_378h_1c.avif)](https://www.bilibili.com/video/BV1HwgrzbEow)
