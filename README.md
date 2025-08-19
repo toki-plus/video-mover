@@ -1,4 +1,4 @@
-# Video Mover - 全自动 TikTok 视频搬运与去重工具
+# Video Mover - 全自动视频搬运与去重工具
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
