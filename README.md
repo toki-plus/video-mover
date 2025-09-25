@@ -158,7 +158,7 @@
         <a href="https://llxoxll.com/">
             <img src="images/toki-plus.png" width="200px" alt="微信"/>
             <br />
-            <sub><b>微信入群</b></sub>
+            <sub><b>微信</b></sub>
         </a>
     </td>
     <td align="center">
