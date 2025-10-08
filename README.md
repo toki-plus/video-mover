@@ -178,7 +178,7 @@
       <br />
       <sub><b>个人微信</b></sub>
       <br />
-      <sub>微信号: toki-plus (请备注“GitHub工具定制”)</sub>
+      <sub>微信号: toki-plus (请备注“GitHub定制”)</sub>
     </td>
     <td align="center">
       <img src="./images/gzh.png" alt="公众号二维码" width="200"/>
