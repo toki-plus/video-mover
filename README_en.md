@@ -178,7 +178,7 @@ My services include, but are not limited to:
       <br />
       <sub><b>WeChat</b></sub>
       <br />
-      <sub>ID: toki-plus (Note: "GitHub Tools Customization")</sub>
+      <sub>ID: toki-plus (Note: "GitHub Customization")</sub>
     </td>
     <td align="center">
       <img src="./images/gzh.png" alt="Public Account QR Code" width="200"/>
