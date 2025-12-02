@@ -148,14 +148,14 @@ Please follow the steps below strictly for environment setup.
 <table align="center">
   <tr>
     <td align="center">
-      <img src="./assets/wechat.png" alt="WeChat QR Code" width="200"/>
+      <img src="./images/wechat.png" alt="WeChat QR Code" width="200"/>
       <br />
       <sub><b>WeChat</b></sub>
       <br />
-      <sub>ID: toki-plus (Note: "GitHub Customization")</sub>
+      <sub>ID: toki-plus (Note: "GitHub")</sub>
     </td>
     <td align="center">
-      <img src="./assets/gzh.png" alt="Public Account QR Code" width="200"/>
+      <img src="./images/gzh.png" alt="Public Account QR Code" width="200"/>
       <br />
       <sub><b>Public Account</b></sub>
       <br />
