@@ -148,14 +148,14 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="./assets/images/wechat.png" alt="微信二维码" width="200"/>
+      <img src="./images/wechat.png" alt="微信二维码" width="200"/>
       <br />
       <sub><b>个人微信</b></sub>
       <br />
       <sub>微信号: toki-plus (请备注“GitHub”)</sub>
     </td>
     <td align="center">
-      <img src="./assets/images/gzh.png" alt="公众号二维码" width="200"/>
+      <img src="./images/gzh.png" alt="公众号二维码" width="200"/>
       <br />
       <sub><b>公众号</b></sub>
       <br />
