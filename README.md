@@ -140,6 +140,28 @@
 2.  程序会自动打开浏览器并开始执行任务。请根据提示进行登录等操作。
 3.  在开发者工具中，点击绿色的三角形箭头（通常是 "Resume script execution"）以继续执行自动化流程。
 
+<p align="center">
+  <strong>技术交流，请添加：</strong>
+</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./assets/images/wechat.png" alt="微信二维码" width="200"/>
+      <br />
+      <sub><b>个人微信</b></sub>
+      <br />
+      <sub>微信号: toki-plus (请备注“GitHub”)</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/images/gzh.png" alt="公众号二维码" width="200"/>
+      <br />
+      <sub><b>公众号</b></sub>
+      <br />
+      <sub>获取最新技术分享与项目更新</sub>
+    </td>
+  </tr>
+</table>
+
 ## 📂 我的其他开源项目
 
 -   **[AI-TTV-Workflow](https://github.com/toki-plus/ai-ttv-workflow)**: 一款AI驱动的文本转视频工具，能将任意文案自动转化为带有配音、字幕和封面的短视频，支持AI文案提取、二创和翻译。
