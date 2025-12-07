@@ -152,7 +152,7 @@ Please follow the steps below strictly for environment setup.
       <br />
       <sub><b>WeChat</b></sub>
       <br />
-      <sub>ID: toki-plus (Note: "GitHub")</sub>
+      <sub>ID: toki-plus (Note: "GitHub Customization")</sub>
     </td>
     <td align="center">
       <img src="./images/gzh.png" alt="Public Account QR Code" width="200"/>
