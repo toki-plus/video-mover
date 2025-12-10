@@ -166,7 +166,8 @@
 
 ## 📂 我的其他开源项目
 
--   **[AI-TTV-Workflow](https://github.com/toki-plus/ai-ttv-workflow)**: 一款AI驱动的文本转视频工具，能将任意文案自动转化为带有配音、字幕和封面的短视频，支持AI文案提取、二创和翻译。
+-   **[AI Highlight Clip](https://github.com/toki-plus/ai-highlight-clip)**: 一款AI驱动的智能剪辑工具，能够全自动地从长视频中分析、发现并剪辑出多个“高光时刻”短视频，并自动生成爆款标题。
+-   **[AI TTV Workflow](https://github.com/toki-plus/ai-ttv-workflow)**: 一款AI驱动的文本转视频工具，能将任意文案自动转化为带有配音、字幕和封面的短视频，支持AI文案提取、二创和翻译。
 -   **[AB 视频去重工具](https://github.com/toki-plus/AB-Video-Deduplicator)**: 通过创新的“高帧率抽帧混合”技术，从根本上重构视频数据指纹，以规避主流短视频平台的原创度检测和查重机制。
 
 ## 🤝 参与贡献
