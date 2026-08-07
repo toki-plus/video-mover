@@ -1,195 +1,88 @@
-﻿# Video Mover: 全自动视频搬运、去重与发布工作流
+# Video Mover
 
-[简体中文](./README.md) | [English](./README_en.md)
+面向多平台内容运营场景的视频处理与发布工作流。
 
-[![GitHub stars](https://img.shields.io/github/stars/toki-plus/video-mover?style=social)](https://github.com/toki-plus/video-mover/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/toki-plus/video-mover?style=social)](https://github.com/toki-plus/video-mover/network/members)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/toki-plus/video-mover/pulls)
+该项目将文件监听、视频标准化处理、文案生成、任务调度和多平台发布整合到一条可配置流水线中，用于探索如何减少内容团队在重复操作上的时间投入。
 
-**Video Mover 是一款强大的、全自动化的内容创作流水线工具，旨在实现从视频源监控下载、深度二次创作到多平台自动发布的无人值守工作流。**
+> 本项目仅应用于拥有合法使用权的内容与账号。使用者应遵守内容版权、平台规则和当地法律法规。
 
-本项目为需要大规模、高效率进行视频内容分发和二次创作的团队及个人设计，通过模块化的设计，将复杂的视频处理流程集成为一套完整的自动化解决方案。
+## 项目背景
 
-<p align="center">
-  <a href="https://www.bilibili.com/video/BV1txQeYyEEz" target="_blank">
-    <img src="./images/cover_demo.png" alt="点击观看B站演示视频" width="800"/>
-  </a>
-  <br>
-  <em>(点击封面图跳转到 B 站观看高清演示视频)</em>
-</p>
+跨平台内容运营通常包含多个相互割裂的步骤：素材进入、格式处理、文案整理、发布时间安排和逐平台上传。重复的人工操作不仅耗时，也容易造成命名、参数和发布记录不一致。
 
----
+Video Mover 将这些步骤抽象为可组合的任务模块，以便对流程进行自动化、监控和扩展。
 
-## ✨ 核心功能
+## 主要能力
 
--   **📥 自动下载 (Auto-Download)**
-    -   **实时监控**：7x24小时自动监听指定TikTok博主的发布状态。
-    -   **即时下载**：一旦发布新视频，立即无水印下载到本地，为后续处理做准备。
+- 监听指定目录并触发处理任务
+- 基于 FFmpeg / OpenCV 进行视频格式与画面处理
+- 使用大模型辅助生成标题和标签
+- 配置任务队列与发布时间
+- 适配 TikTok、抖音、快手、哔哩哔哩、视频号和小红书等平台
+- 通过插件与 Handler 结构扩展处理及上传步骤
+- 记录任务日志与执行状态
 
--   **✂️ 智能去重 (Intelligent Deduplication)**
-    -   提供一套强大的视频二次创作工具箱，所有功能均可配置和组合，以达到理想的去重效果。
-    -   **性能优化**: **🚀 GPU加速**，利用NVIDIA显卡大幅提升处理速度。
-    -   **内容增强**: 自动字幕、自定义标题、背景音乐 (BGM)、画中画 (PIP)。
-    -   **视频处理**: 静音剪辑、镜像、旋转、裁剪、淡入淡出、画质调整。
-    -   **高级特效**: 背景模糊、帧交换、颜色偏移、频域扰乱、纹理噪声等数十种视觉特效。
+## 工作流
 
--   **🚀 AI 驱动上传 (AI-Powered Upload)**
-    -   **AI标题生成**：调用阿里云百炼AI大模型，分析视频内容，自动生成爆款标题和标签。
-    -   **自动化发布**：模拟浏览器操作，登录视频号后台，自动填写所有信息并发布视频。
+```text
+Content input
+    -> File watcher
+    -> Video processing
+    -> Metadata generation
+    -> Scheduling
+    -> Platform adapters
+    -> Execution logs
+```
 
-## 📸 软件截图
+## 技术设计
 
-<p align="center">
-  <img src="./images/cover_script.png" alt="软件主界面" width="800"/>
-  <br>
-  <em>脚本运行展示图。</em>
-</p>
+- `main.py`：任务编排、文件管理、调度与插件入口
+- `Dedup/`：基于 FFmpeg、OpenCV 的视频处理模块
+- `Upload/`：各平台上传适配器与账号配置
+- `my_apps.yaml`：应用与网络参数配置
 
-## 🚀 快速开始
+主要技术：Python、FFmpeg、OpenCV、Playwright、Watchdog、APScheduler、LLM API。
 
-请严格按照以下步骤进行环境配置和安装。
+## 快速开始
 
-### 系统要求
+### 环境要求
 
-1.  **操作系统**: Windows。
-2.  **软件/工具**:
-    | 软件/工具              | 下载链接                                                     | 备注                                                     |
-    | :--------------------- | :----------------------------------------------------------- | :------------------------------------------------------- |
-    | **.NET Framework 4.8** | [官方下载](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer) | Windows 系统组件。                                       |
-    | **Python 3.12+**       | [官方下载](https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe) | 安装时请务必勾选 `Add Python to PATH`。                  |
-    | **Node.js 22.x**       | [官方下载](https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi) | 建议选择 LTS 版本。                                      |
-    | **Git**                | [官方下载](https://git-scm.com/downloads/win)                | 版本控制工具。                                           |
-    | **FFmpeg**             | [Gyan.dev Builds](https://github.com/GyanD/codexffmpeg/releases/download/7.1.1/ffmpeg-7.1.1-full_build.7z) | **必须**解压并将其 `bin` 目录添加到系统环境变量 `PATH`。 |
-    | **Chrome 浏览器**      | [官方下载](https://www.google.com/)                          | 用于自动化上传。                                         |
-    | **v2rayN** (可选)      | [GitHub Releases](https://github.com/2dust/v2rayN/releases/download/5.39/v2rayN-Core.zip) | 如果你需要网络代理来访问TikTok。                         |
+- Windows
+- Python 3.12+
+- Node.js 22.x
+- FFmpeg（需加入 `PATH`）
+- Chrome
 
-### 安装与配置
+### 安装
 
-1.  **克隆本仓库：**
-    ```bash
-    git clone https://github.com/toki-plus/video-mover.git
-    cd video-mover
-    ```
+```bash
+git clone https://github.com/toki-plus/video-mover.git
+cd video-mover
+```
 
-2.  **自动安装依赖：**
-    双击运行项目根目录下的 `setup.bat` 脚本。它会自动安装所有必要的 Python 和 Node.js 依赖。
+运行 `setup.bat` 安装 Python、Playwright 与相关依赖。建议在独立虚拟环境中运行。
 
-3.  **⚠️ 重要：手动修改依赖库**
-    由于特定功能需求，部分已安装的Python库需要进行少量代码修改。**这是保证程序正常运行的关键步骤**。请在虚拟环境中找到对应文件并修改：
+### 配置
 
-    -   **文件 1**: `f2/apps/tiktok/handler.py`
-        -   **位置**: 第 `389` 行
-        -   **操作**: 将 `cursor` 强制转换为 `int` 类型。
-        -   **修改前**: `params={"cursor": cursor, ...}`
-        -   **修改后**: `params={"cursor": int(cursor), ...}`
+1. 在 `my_apps.yaml` 中配置输入目录、目标平台、账号文件、代理和调度参数。
+2. 如启用 AI 文案功能，通过安全的本地配置方式提供 API Key。
+3. 首次运行平台适配器时，根据提示完成账号登录与 Cookie 初始化。
 
-    -   **文件 2**: `f2/utils/utils.py`
-        -   **位置**: 第 `200` 行附近
-        -   **操作**: 修改日期处理逻辑以兼容不同格式。
-            ```python
-            # 将以下代码块:
-            if date_type == "start":
-                date_str = f"{start_date} 00-00-00"
-            elif date_type == "end":
-                date_str = f"{end_date} 23-59-59"
+```bash
+python main.py
+```
 
-            # 替换为:
-            if len(start_date.split()) == 1:
-                if date_type == "start":
-                    date_str = f"{start_date} 00-00-00"
-                elif date_type == "end":
-                    date_str = f"{end_date} 23-59-59"
-            else:
-                if date_type == "start":
-                    date_str = f"{start_date}"
-                elif date_type == "end":
-                    date_str = f"{end_date}"
-            ```
-        -   **位置**: 第 `690` 行附近
-        -   **操作**: 修改日期字符串解析逻辑。
-            ```python
-            # 将:
-            start_date = datetime.datetime.strptime(start_str, "%Y-%m-%d")
-            end_date = datetime.datetime.strptime(end_str, "%Y-%m-%d") + datetime.timedelta(...)
+## 当前限制
 
-            # 替换为:
-            if len(start_str.split()) == 1:
-                start_date = datetime.datetime.strptime(start_str, "%Y-%m-%d")
-            else:
-                start_date = datetime.datetime.strptime(start_str, "%Y-%m-%d %H-%M-%S")
-            if len(end_str.split()) == 1:
-                end_date = datetime.datetime.strptime(end_str, "%Y-%m-%d") + datetime.timedelta(days=1, seconds=-1)
-            else:
-                end_date = datetime.datetime.strptime(end_str, "%Y-%m-%d %H-%M-%S")
-            ```
-    -   **文件 3**: `tencent_uploader/main.py`
-        -   **位置**: 第 `191` 行附近
-        -   **操作**: 延长页面等待超时时间。
-        -   **修改前**: `await page.wait_for_url(".../post/list", timeout=1500)`
-        -   **修改后**: `await page.wait_for_url(".../post/list", timeout=10000)`
+- 平台页面和接口发生变化时，上传适配器可能需要同步更新。
+- 部分上游依赖存在版本兼容要求，建议固定依赖版本并使用隔离环境。
+- 项目尚未建立完整的自动化测试与 CI，生产使用前应进行小规模验证。
+- API Key、Cookie 和账号配置不应提交到 Git 仓库。
 
-4.  **配置密钥与Cookie**
-    -   **阿里云百炼 API Key**: 前往阿里云百炼大模型平台申请 API Key，然后打开 `Upload/vx_upload.py` 文件，将你的 `api_key` 填入。
-    -   **TikTok Cookie**: 在浏览器中登录 TikTok 网页版，打开开发者工具(F12)复制 `Cookie` 值，然后打开根目录下的 `my_apps.yaml` 文件替换原有内容。
-    -   **网络代理 (可选)**: 在 `my_apps.yaml` 文件中修改 `Proxy` 配置项。
+## 项目价值
 
-## 📖 使用指南
+本项目重点验证的是跨工具、跨平台工作流的拆解与编排能力，包括任务边界设计、第三方系统适配、失败日志和后续扩展，而非单一的视频处理算法。
 
-1.  双击运行根目录下的 `start.bat` 脚本。
-2.  程序会自动打开浏览器并开始执行任务。请根据提示进行登录等操作。
-3.  在开发者工具中，点击绿色的三角形箭头（通常是 "Resume script execution"）以继续执行自动化流程。
+## License
 
----
-
-<p align="center">
-  <strong>技术交流，请添加：</strong>
-</p>
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="./images/wechat.png" alt="微信二维码" width="200"/>
-      <br />
-      <sub><b>个人微信</b></sub>
-      <br />
-      <sub>微信号: toki-plus</sub>
-      <br />
-      <sub>（请备注来意，否则不通过）</sub>
-    </td>
-    <td align="center">
-      <img src="./images/gzh.png" alt="公众号二维码" width="200"/>
-      <br />
-      <sub><b>公众号</b></sub>
-      <br />
-      <sub>获取最新技术分享与项目更新</sub>
-    </td>
-  </tr>
-</table>
-
-## 📂 我的其他开源项目
-
--   **[AI-Trader-For-MT5](https://github.com/toki-plus/ai-trader-for-mt5)**: 面向 MetaTrader 5 的 AI 交易助手与 EA 工程化框架，支持 MQL5、Python、MCP 工具服务、风控模块和私有化定制开发。
--   **[Netease Downloader](https://github.com/toki-plus/netease-downloader)**: 一款优雅、功能丰富的网易云音乐下载器，支持无损/高品质音质、歌单/专辑批量下载、扫码登录和自动写入ID3元数据。
--   **[AI-Trader-For-MT4](https://github.com/toki-plus/ai-trader-for-mt4)**: LLM驱动的自主型MT4交易机器人框架，将大语言模型转变为能够在 MetaTrader 4 平台上进行“感知-思考-行动”的 AI 交易代理。
--   **[Auto USPS Tracker](https://github.com/toki-plus/auto-usps-tracker)**: 专为跨境电商卖家设计的 USPS 批量物流追踪器，支持批量查询并生成 Excel 报告。
--   **[AI Mixed Cut](https://github.com/toki-plus/ai-mixed-cut)**: AI 内容重构与混剪工具，通过“解构-重构”模式将现有视频解析为创作素材，并自动生成新的短视频内容。
--   **[AI Video Workflow](https://github.com/toki-plus/ai-video-workflow)**: 全自动 AI 原生视频生成工作流，集成文生图、图生视频和文生音乐模型，一键创作 AIGC 短视频。
--   **[AI Highlight Clip](https://github.com/toki-plus/ai-highlight-clip)**: AI 驱动的智能剪辑工具，自动从长视频中分析并提取高光片段，生成适合分发的短视频内容。
--   **[AI TTV Workflow](https://github.com/toki-plus/ai-ttv-workflow)**: AI 驱动的文本转视频工具，自动将文案转化为带配音、字幕和封面的短视频。
--   **[AB Video Deduplicator](https://github.com/toki-plus/AB-Video-Deduplicator)**: 视频去重与指纹重构工具，通过高帧率抽帧混合等方式改变视频数据特征。
-
-
-## 🤝 参与贡献
-
-欢迎任何形式的贡献！如果你有新的功能点子、发现了Bug，或者有任何改进建议，请：
--   提交一个 [Issue](https://github.com/toki-plus/video-mover/issues) 进行讨论。
--   Fork 本仓库并提交 [Pull Request](https://github.com/toki-plus/video-mover/pulls)。
-
-如果这个项目对你有帮助，请不吝点亮一颗 ⭐！
-
-## 📜 开源协议
-
-本项目基于 MIT 协议开源。详情请见 [LICENSE](LICENSE) 文件。
-
-
-
+See [LICENSE](./LICENSE).
