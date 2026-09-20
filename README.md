@@ -14,6 +14,22 @@
 
 Video Mover 将这些步骤抽象为可组合的任务模块，以便对流程进行自动化、监控和扩展。项目的目标不是替代创作环节，而是把"处理—文案—调度—发布"这类确定性的重复劳动交给流水线，让人保留在素材选择与内容终审环节。
 
+## 特别鸣谢
+
+<p align="center">
+  <a href="https://www.ipwo.net/?ref=githubvideomover" target="_blank">
+    <img src="images/IPWO.png" alt="IPWO" width="800">
+  </a>
+</p>
+
+<p align="center">
+  <b><a href="https://www.ipwo.net/?ref=githubvideomover" target="_blank">IPWO</a></b>
+  住宅代理提供 195+ 地区动静态住宅代理，适用于 TikTok、社交媒体运营、多平台内容分发、浏览器自动化及数据获取等场景，为开发者和运营团队提供不同地区的网络环境选择。
+  <br>
+  包含 HTTP(S) / SOCKS5 多协议，充裕住宅流量供免费测试，优惠码：<code>0205</code>，
+  <a href="https://www.ipwo.net/?ref=githubvideomover">访问入口</a>
+</p>
+
 ## 主要能力
 
 - **目录监听与任务触发**：基于 Watchdog 持续监听指定素材目录，新文件进入后自动触发处理任务，支持 7×24 小时无人值守运行。
